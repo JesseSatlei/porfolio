@@ -19,7 +19,7 @@ const projectsData: ProjectData[] = [
     title: "Irroba E-commerce",
     description: "Sistema de E-commerce para todos os tipos de logistas",
     image: "/images/projects/1.png",
-    tag: ["All", "Web", "Experiência"],
+    tag: ["Todos", "Web", "Experiência"],
     projectUrl: "https://www.irroba.com.br/"
   },
   {
@@ -27,7 +27,7 @@ const projectsData: ProjectData[] = [
     title: "Parceiros da Construção",
     description: "Sistema de Educação",
     image: "/images/projects/2.png",
-    tag: ["All", "Web", "Experiência"],
+    tag: ["Todos", "Web", "Experiência"],
     projectUrl: "https://www.parceirodaconstrucao.com.br/"
   },
   {
@@ -35,7 +35,7 @@ const projectsData: ProjectData[] = [
     title: "Shopping",
     description: "Sistema geral para shopping com funcionalidades de pagamento de estacionamento, gerenciamento de notas fiscais e etc.",
     image: "/images/projects/3.png",
-    tag: ["All", "Mobile", "Experiência"],
+    tag: ["Todos", "Mobile", "Experiência"],
     projectUrl: "https://play.google.com/store/apps/details?id=br.com.brmalls.customer.moocaplaza"
   },
   {
@@ -43,13 +43,13 @@ const projectsData: ProjectData[] = [
     title: "Restaurante",
     description: "Pagina de compras para restaurante",
     image: "/images/projects/4.png",
-    tag: ["All", "Pessoal", "Freela"],
+    tag: ["Todos", "Pessoal", "Freela"],
     projectUrl: "https://google.com"
   },
 ];
 
 const ProjectsSection: React.FC = () => {
-  const [tag, setTag] = useState<string>("All");
+  const [tag, setTag] = useState<string>("Todos");
 
   const filteredProjects = projectsData.filter((project) =>
     project.tag.includes(tag)
@@ -66,9 +66,9 @@ const ProjectsSection: React.FC = () => {
       </h2>
       <div className="flex flex-row justify-center items-center gap-2 text-white my-6">
         <ProjectTag
-          name="All"
+          name="Todos"
           onClick={handleTagChange}
-          isSelected={tag === "All"}
+          isSelected={tag === "Todos"}
         />
         <ProjectTag
           name="Experiência"
