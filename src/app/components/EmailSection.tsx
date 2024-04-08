@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const EmailSection = () => {
   return (
-    <section className="grid md:grid-cols-2 my-12 md:my-16 py-24 gap-4 relative">
+    <section className="grid md:grid-cols-2 my-12 md:my-16 py-24 gap-4 relative" id="contact">
       <div className="absolute w-80 h-80 z-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-900 to-transparent rounded-full blur-lg top-full -left-4 transform -translate-x-1/2 -translate-y-1/2"></div>
       <div className="z-10">
         <h5 className="text-xl font-bold text-white my-2">Vamos se conectar?</h5>
@@ -13,10 +13,10 @@ const EmailSection = () => {
           Estou sempre aberto a novas oportunidades e conversas, não tenha medo e vamos conversar um pouco!
         </p>
         <div className="socials flex flex-row gap-2">
-          <Link href="https://github.com/JesseSatlei">
+          <Link href="https://github.com/JesseSatlei" target="_blank">
             <Image src="/github-icon.svg" width={50} height={50} alt={""} />
           </Link>
-          <Link href="https://www.linkedin.com/in/jess%C3%A9-satlei-souza-carvalho/">
+          <Link href="https://www.linkedin.com/in/jess%C3%A9-satlei-souza-carvalho/" target="_blank">
             <Image src="/linkedin-icon.svg" width={50} height={50} alt={""} />
           </Link>
         </div>

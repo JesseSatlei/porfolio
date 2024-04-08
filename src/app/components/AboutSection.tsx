@@ -36,7 +36,7 @@ const TAB_DATA: TabData[] = [
     ),
   },
   {
-    title: "Cursos/Certificações",
+    title: "Cursos",
     id: "certifications",
     content: (
       <ul className="list-disc pl-2">

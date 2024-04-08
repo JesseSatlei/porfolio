@@ -19,7 +19,7 @@ const projectsData: ProjectData[] = [
     title: "Irroba E-commerce",
     description: "Sistema de E-commerce para todos os tipos de logistas",
     image: "/images/projects/1.png",
-    tag: ["Todos", "Web", "Experiência Profissional"],
+    tag: ["All", "Web", "Experiência"],
     projectUrl: "https://www.irroba.com.br/"
   },
   {
@@ -27,7 +27,7 @@ const projectsData: ProjectData[] = [
     title: "Parceiros da Construção",
     description: "Sistema de Educação",
     image: "/images/projects/2.png",
-    tag: ["Todos", "Web", "Experiência Profissional"],
+    tag: ["All", "Web", "Experiência"],
     projectUrl: "https://www.parceirodaconstrucao.com.br/"
   },
   {
@@ -35,7 +35,7 @@ const projectsData: ProjectData[] = [
     title: "Shopping",
     description: "Sistema geral para shopping com funcionalidades de pagamento de estacionamento, gerenciamento de notas fiscais e etc.",
     image: "/images/projects/3.png",
-    tag: ["Todos", "Mobile"],
+    tag: ["All", "Mobile", "Experiência"],
     projectUrl: "https://play.google.com/store/apps/details?id=br.com.brmalls.customer.moocaplaza"
   },
   {
@@ -43,13 +43,13 @@ const projectsData: ProjectData[] = [
     title: "Restaurante",
     description: "Pagina de compras para restaurante",
     image: "/images/projects/4.png",
-    tag: ["Todos", "Pessoal", "Freelancer"],
+    tag: ["All", "Pessoal", "Freela"],
     projectUrl: "https://google.com"
   },
 ];
 
 const ProjectsSection: React.FC = () => {
-  const [tag, setTag] = useState<string>("Todos");
+  const [tag, setTag] = useState<string>("All");
 
   const filteredProjects = projectsData.filter((project) =>
     project.tag.includes(tag)
@@ -66,34 +66,19 @@ const ProjectsSection: React.FC = () => {
       </h2>
       <div className="flex flex-row justify-center items-center gap-2 text-white my-6">
         <ProjectTag
-          name="Todos"
+          name="All"
           onClick={handleTagChange}
-          isSelected={tag === "Todos"}
+          isSelected={tag === "All"}
         />
         <ProjectTag
-          name="Web"
+          name="Profissional"
           onClick={handleTagChange}
-          isSelected={tag === "Web"}
+          isSelected={tag === "Experiência"}
         />
         <ProjectTag
-          name="Mobile"
+          name="Freela"
           onClick={handleTagChange}
-          isSelected={tag === "Mobile"}
-        />
-        <ProjectTag
-          name="Experiência Profissional"
-          onClick={handleTagChange}
-          isSelected={tag === "Experiência Profissional"}
-        />
-        <ProjectTag
-          name="Pessoal"
-          onClick={handleTagChange}
-          isSelected={tag === "Pessoal"}
-        />
-        <ProjectTag
-          name="Freelancer"
-          onClick={handleTagChange}
-          isSelected={tag === "Freelancer"}
+          isSelected={tag === "Freela"}
         />
       </div>
       <div className="grid md:grid-cols-3 gap-8 md:gap-12">

@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
+import Link from "next/link";
 
 const HeroSection = () => {
   return (
@@ -12,7 +13,7 @@ const HeroSection = () => {
             Olá, Eu sou{" "}
           </span>{" "}
           <br></br>
-					<TypeAnimation
+          <TypeAnimation
             sequence={[
               "Jessé Satlei",
               1000,
@@ -29,16 +30,20 @@ const HeroSection = () => {
           />
         </h1>
         <p className="text-[#ADB7BE] mb-6 textl-lg lg:text-xl">
-					Sou um profissional dedicado e experiente em desenvolvimento de software, com expertise em diversas tecnologias. Ao longo da minha carreira, trabalhei em empresas como Diwe, Ilia e Irroba E-commerce, desempenhando papéis-chave no desenvolvimento de soluções personalizadas para clientes e na manutenção de microsserviços e sistemas de grande escala.
+          Sou um profissional dedicado e experiente em desenvolvimento de software, com expertise em diversas tecnologias. Ao longo da minha carreira, trabalhei em empresas como Diwe, Ilia e Irroba E-commerce, desempenhando papéis-chave no desenvolvimento de soluções personalizadas para clientes e na manutenção de microsserviços e sistemas de grande escala.
         </p>
         <div>
           <button className="bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white px-6 py-3 rounded-full mr-4">
-						Contrate-me { ":)" }
+            <Link href="#contact" passHref>
+              Contrate-me {":)"}
+            </Link>
           </button>
-          <button className="m-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 px-1 py-1  text-white rounded-full">
-            <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
-              Download CV
-            </span>
+          <button>
+            <a href="/cv/Curriculo.pdf" className="m-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 px-1 py-1 text-white rounded-full block" download>
+              <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
+                Download CV
+              </span>
+            </a>
           </button>
         </div>
       </div>
