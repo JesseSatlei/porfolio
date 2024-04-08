@@ -71,7 +71,7 @@ const ProjectsSection: React.FC = () => {
           isSelected={tag === "All"}
         />
         <ProjectTag
-          name="Profissional"
+          name="Experiência"
           onClick={handleTagChange}
           isSelected={tag === "Experiência"}
         />

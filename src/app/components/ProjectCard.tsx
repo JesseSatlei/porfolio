@@ -18,7 +18,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ imgUrl, title, description, p
         <Image
           src={imgUrl}
           alt={title}
-          layout="responsive"
           width={500}
           height={500}
         />
