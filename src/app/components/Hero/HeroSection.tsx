@@ -32,8 +32,8 @@ const HeroSection = () => {
         <p className="text-[#ADB7BE] mb-6 textl-lg lg:text-xl">
           Sou um profissional dedicado e experiente em desenvolvimento de software, com expertise em diversas tecnologias. Ao longo da minha carreira, trabalhei em empresas como Diwe, Ilia e Irroba E-commerce, desempenhando papéis-chave no desenvolvimento de soluções personalizadas para clientes e na manutenção de microsserviços e sistemas de grande escala.
         </p>
-        <div>
-          <button className="bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white px-6 py-3 rounded-full mr-4">
+        <div className="flex flex-col items-center lg:flex-row">
+          <button className="bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white px-6 py-3 rounded-full mb-4 lg:mb-0 lg:mr-4">
             <Link href="#contact" passHref>
               Contrate-me {":)"}
             </Link>
