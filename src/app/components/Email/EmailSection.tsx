@@ -5,10 +5,10 @@ import Image from "next/image";
 
 const EmailSection = () => {
   return (
-    <section className="grid md:grid-cols-2 my-12 md:my-16 py-24 gap-4 relative" id="contact">
+    <section className="grid md:grid-cols-2 my-12 md:my-16 py-24 gap-4 relative">
       <div className="absolute w-80 h-80 z-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-900 to-transparent rounded-full blur-lg top-full -left-4 transform -translate-x-1/2 -translate-y-1/2"></div>
-      <div className="z-10">
-        <h5 className="text-xl font-bold text-white my-2">Vamos se conectar?</h5>
+      <div className="z-10" id="contact">
+        <h5 className="text-xl font-bold text-white my-2">Vamos nos conectar!</h5>
         <p className="text-[#ADB7BE] mb-4 max-w-md">
           Estou sempre aberto a novas oportunidades e conversas, não tenha medo e vamos conversar um pouco!
         </p>

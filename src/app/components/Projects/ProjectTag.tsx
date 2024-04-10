@@ -14,7 +14,7 @@ const ProjectTag: React.FC<ProjectTagProps> = ({ name, onClick, isSelected }) =>
   return (
     <button
       onClick={() => onClick(name)}
-      className={`border-2 rounded-full px-6 py-3 text-xl cursor-pointer ${buttonStyles}`}
+      className={`border-2 rounded-full px-4 py-3 text-xl cursor-pointer ${buttonStyles}`}
     >
       {name}
     </button>
